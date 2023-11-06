@@ -11,6 +11,8 @@
 		A7CA5D662AF2AE34005C813B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D652AF2AE34005C813B /* ContentView.swift */; };
 		A7CA5D682AF2AE35005C813B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CA5D672AF2AE35005C813B /* Assets.xcassets */; };
 		A7CA5D6B2AF2AE35005C813B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CA5D6A2AF2AE35005C813B /* Preview Assets.xcassets */; };
+		A7CA5D742AF2B0A4005C813B /* CacheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D732AF2B0A4005C813B /* CacheViewModel.swift */; };
+		A7CA5D772AF2B215005C813B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA5D762AF2B215005C813B /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A7CA5D652AF2AE34005C813B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7CA5D672AF2AE35005C813B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CA5D6A2AF2AE35005C813B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7CA5D732AF2B0A4005C813B /* CacheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheViewModel.swift; sourceTree = "<group>"; };
+		A7CA5D762AF2B215005C813B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		A7CA5D622AF2AE34005C813B /* NSCache */ = {
 			isa = PBXGroup;
 			children = (
+				A7CA5D752AF2B202005C813B /* Manager */,
+				A7CA5D722AF2B08E005C813B /* ViewModel */,
+				A7CA5D712AF2AE9A005C813B /* View */,
 				A7CA5D632AF2AE34005C813B /* NSCacheApp.swift */,
-				A7CA5D652AF2AE34005C813B /* ContentView.swift */,
 				A7CA5D672AF2AE35005C813B /* Assets.xcassets */,
 				A7CA5D692AF2AE35005C813B /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				A7CA5D6A2AF2AE35005C813B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7CA5D712AF2AE9A005C813B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA5D652AF2AE34005C813B /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7CA5D722AF2B08E005C813B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA5D732AF2B0A4005C813B /* CacheViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7CA5D752AF2B202005C813B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA5D762AF2B215005C813B /* CacheManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CA5D772AF2B215005C813B /* CacheManager.swift in Sources */,
 				A7CA5D662AF2AE34005C813B /* ContentView.swift in Sources */,
+				A7CA5D742AF2B0A4005C813B /* CacheViewModel.swift in Sources */,
 				A7CA5D642AF2AE34005C813B /* NSCacheApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
